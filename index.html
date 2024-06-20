@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="input-container">
-            <input type="text" id="new-task" placeholder="Add a new task">
-            <button id="add-task">+</button>
+            <input type="text" id="new-task-input" placeholder="Add a new task">
+            <button id="add-task-button">+</button>
         </div>
-        <h2>Tasks to do - <span id="tasks-to-do-count">0</span></h2>
-        <ul id="tasks-to-do"></ul>
-        <h2>Done - <span id="done-count">0</span></h2>
-        <ul id="done-tasks"></ul>
+        <div class="tasks-container">
+            <h3>Tasks to do - <span id="tasks-todo-count">0</span></h3>
+            <div id="tasks-todo"></div>
+            <h3>Done - <span id="tasks-done-count">0</span></h3>
+            <div id="tasks-done"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
